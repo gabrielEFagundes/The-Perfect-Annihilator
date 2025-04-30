@@ -4,7 +4,7 @@ class Texto:
 
     def criar_e_executar_texto():
         diretorio = os.getcwd()
-        caminho = os.path.join(diretorio, 'Programa', 'texto.txt')
+        caminho = os.path.join(diretorio, 'texto.txt')
 
         text = r'''
             Seu computador esta infectado.
