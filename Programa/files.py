@@ -3,8 +3,8 @@ import os
 class Texto:
 
     def criar_e_executar_texto():
-        user = os.getlogin()
-        caminho = os.path.join('Programa', 'texto.txt')
+        diretorio = os.getcwd()
+        caminho = os.path.join(diretorio, 'Programa', 'texto.txt')
 
         text = r'''
             Seu computador esta infectado.
