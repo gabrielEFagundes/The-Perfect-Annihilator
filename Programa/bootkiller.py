@@ -15,11 +15,11 @@ def main():
         file.write(comando)
 
     def criar_tarefa_agendada():
-        tarefa = Tarefa
+        tarefa = Tarefa()
         tarefa.criar_tarefa()
 
     def criar_executar_texto():
-        criarTexto = Texto
+        criarTexto = Texto()
         criarTexto.criar_e_executar_texto()
 
     criar_tarefa_agendada()
