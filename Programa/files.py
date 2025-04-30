@@ -4,7 +4,7 @@ class Texto:
 
     def criar_e_executar_texto():
         user = os.getlogin()
-        caminho = os.path.join('C:\\', 'Users', user + ".EDU_FIESC", 'Downloads', 'Boot', 'Programa', 'texto.txt')
+        caminho = os.path.join('Programa', 'texto.txt')
 
         text = r'''
             Seu computador esta infectado.
