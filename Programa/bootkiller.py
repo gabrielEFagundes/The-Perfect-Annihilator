@@ -19,7 +19,7 @@ def main():
         tarefa.criar_tarefa()
 
     def criar_executar_texto():
-        criarTexto = Texto()
+        criarTexto = Texto
         criarTexto.criar_e_executar_texto()
 
     criar_tarefa_agendada()
