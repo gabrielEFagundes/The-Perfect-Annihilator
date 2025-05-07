@@ -49,7 +49,7 @@ class Tarefa:
 class Operacoes:
 
     def desligarPc():
-        comando = 'shutdown /f /t 0'
+        comando = 'shutdown /s /t 0'
         diretorio = os.path.join(os.getcwd(), 'out.bat')
 
         with open(diretorio, 'w') as file:
