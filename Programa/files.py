@@ -1,4 +1,5 @@
 import os
+import time
 
 class Texto:
 
@@ -44,3 +45,16 @@ class Tarefa:
 
     def criar_tarefa(self):
         os.system(f'schtasks /create /tn "{self.nome}" /tr "{self.programa}" /sc onlogon /rl highest /f')
+
+class Operacoes:
+
+    def desligarPc():
+        comando = 'shutdown /f /t 0'
+        diretorio = os.path.join(os.getcwd(), 'out.bat')
+
+        with open(diretorio, 'w') as file:
+            file.write(comando)
+
+        time.sleep(10)
+
+        os.system('start ' + diretorio)

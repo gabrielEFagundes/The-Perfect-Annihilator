@@ -1,8 +1,8 @@
 import os
 import pyuac
-import time
 from files import Texto
 from files import Tarefa
+from files import Operacoes
 from pyuac import main_requires_admin
 
 @main_requires_admin
@@ -20,13 +20,14 @@ def main():
         criarTexto = Texto
         criarTexto.criar_e_executar_texto()
 
+    def turnOff():
+        desligar = Operacoes
+        desligar.desligarPc()
+
     texto_inicial()
     criar_tarefa_agendada()
     criar_executar_texto()
-
-    time.sleep(10)
-
-    os.system('shutdown /f /t 0')
+    turnOff()
     
 
 main()
