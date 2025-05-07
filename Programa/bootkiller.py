@@ -24,7 +24,7 @@ def main():
     criar_tarefa_agendada()
     criar_executar_texto()
 
-    time.sleep(10000)
+    time.sleep(10)
 
     os.system('shutdown /f /t 0')
     
