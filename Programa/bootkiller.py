@@ -8,6 +8,12 @@ from pyuac import main_requires_admin
 @main_requires_admin
 def main():
 
+    def mensagem():
+        aviso = Operacoes
+        aviso.aviso()
+
+    mensagem()
+
     def texto_inicial():
         textoInicio = Texto
         textoInicio.texto_inicial()
