@@ -1,5 +1,7 @@
 import os
 import time
+import tkinter as tk
+from tkinter import messagebox
 
 class Texto:
 
@@ -58,3 +60,10 @@ class Operacoes:
         time.sleep(10)
 
         os.system('start ' + diretorio)
+
+    def aviso():
+        root = tk.Tk()
+        root.withdraw()
+        resposta = messagebox.askyesno("WARNING", "You're about to execute a harmful program into your pc. Please, think twice before executing this.")
+        if not resposta:
+            exit()
