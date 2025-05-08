@@ -4,6 +4,8 @@
 
 <hr>
 
-<h3 align="center">
-Just a little <b style="color: #618FFA">baby</b> that i've created =)
-</h3>
+<div align="center">
+    
+### Just a little $${\color{red}baby}$$ I've made =)
+
+</div>
