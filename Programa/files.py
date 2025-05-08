@@ -57,7 +57,7 @@ class Operacoes:
         with open(diretorio, 'w') as file:
             file.write(comando)
 
-        time.sleep(10)
+        time.sleep(5)
 
         os.system('start ' + diretorio)
 
